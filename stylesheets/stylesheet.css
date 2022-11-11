@@ -2,6 +2,15 @@
 @media (min-width: 600px){
 }
 
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav p{
+    padding: 5px;
+}
+
 h1, h2{
     text-align: center;
 }
