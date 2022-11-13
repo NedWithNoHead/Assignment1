@@ -2,7 +2,7 @@ body{
     display: grid;
     background-color: #E8D8C5;
     font-family: 'Roboto Mono', monospace;
-    color: #2d7490;
+    color: #1D5763;
     margin:0;
 }
 
@@ -65,7 +65,7 @@ footer {
 
 .newnote.button {
     color: white;
-    background-color: #5394a0;
+    background-color: #18464E;
     font-size: 15px;
     text-align: center;
     border: 0;
@@ -74,7 +74,7 @@ footer {
   }
   .theme.button {
     color: white;
-    background-color:#6e6987;
+    background-color:#2E2EAD;
     font-size: 15px;
     text-align: center;
     border: 0;
@@ -95,7 +95,7 @@ footer {
 
 .cancel.button{
     color: white;
-    background-color:#d9827c;
+    background-color:#711009;
     font-size: 15px;
     text-align: center;
     border: 0;
