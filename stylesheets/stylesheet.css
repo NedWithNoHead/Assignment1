@@ -2,13 +2,15 @@ body {
     background-color: #E8D8C5;
     font-family: 'Roboto Mono', monospace;
     color: #2d7490;
+    margin:0;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr;
+    display:grid;
+    grid-template-rows: auto auto auto auto;
 }
+
+
 .button1 {
     color: white;
     background-color: #5394a0;
