@@ -1,9 +1,22 @@
-body {
+body{
+    display: grid;
     background-color: #E8D8C5;
     font-family: 'Roboto Mono', monospace;
     color: #2d7490;
     margin:0;
 }
+
+aside{
+    background-color: #faf4ed;
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+
+
+
+@media (min-width: 600px){
+
 
 main {
     display:grid;
@@ -46,6 +59,7 @@ nav p{
     margin: 10px;
 }
 
+
 .upperbuttons{
     grid-row: 2;
     display: flex;
@@ -71,7 +85,7 @@ footer {
     text-align: center;
 }
 
-.button1 {
+.newnote.button {
     color: white;
     background-color: #5394a0;
     font-size: 15px;
@@ -80,7 +94,7 @@ footer {
     border-radius: 4px;
     padding: 10px;  
   }
-  .button2 {
+  .theme.button {
     color: white;
     background-color:#6e6987;
     font-size: 15px;
@@ -90,7 +104,7 @@ footer {
     padding: 10px;  
   }
 
-.button3{
+.save.button{
     color: white;
     background-color:#2d7490;
     font-size: 15px;
@@ -101,7 +115,7 @@ footer {
 }
 
 
-.button4{
+.cancel.button{
     color: white;
     background-color:#d9827c;
     font-size: 15px;
@@ -111,7 +125,13 @@ footer {
     padding: 10px;  
 }
 
-
-@media (min-width: 600px){
+.button:hover{
+    background-color: red;
 }
 
+.button:active{
+    background-color:gray;
+}
+
+
+}
