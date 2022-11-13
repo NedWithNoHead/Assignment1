@@ -7,6 +7,7 @@ body {
 
 main {
     display:grid;
+    grid-template-rows: max-content;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
 }
@@ -25,6 +26,10 @@ aside{
 
 }
 
+ul li{
+    list-style-type: square;
+}
+
 .mainnote {
     display: grid;
     grid-template-rows: max-content max-content max-content max-content;
@@ -32,12 +37,12 @@ aside{
 
 nav {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: right;
     padding: 2em;
 }
 
-ul li{
-    list-style-type: square;
+nav p{
+    margin: 10px;
 }
 
 footer {
