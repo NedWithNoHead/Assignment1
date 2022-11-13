@@ -24,6 +24,11 @@ aside{
 
 }
 
+.mainnote {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 ul li{
     list-style-type: square;
 }
