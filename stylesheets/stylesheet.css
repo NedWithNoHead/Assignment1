@@ -2,19 +2,18 @@
 @media (min-width: 600px){
 }
 
-body{
-    display: flex;
-}
 
-main {
+
+ main {
     background-color: #E8D8C5;
     font-family: 'Roboto Mono', monospace;
     color: #2d7490;
-    display:grid;
+    /* display:flex;
+    flex-direction: row-grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr; */
 }
-
+/*
 section p{
     display: flex;
     flex-direction: revert;
@@ -113,4 +112,4 @@ img{
 
 textarea {
     resize: none
-}
+} */
