@@ -8,6 +8,7 @@ body {
 main {
     display:grid;
     grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 
 header {
@@ -26,7 +27,13 @@ aside{
 
 .mainnote {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content max-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2em;
 }
 
 ul li{
