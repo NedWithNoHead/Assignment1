@@ -12,36 +12,13 @@ aside{
     grid-row: 1;
 }
 
-
-
-
-@media (min-width: 600px){
-
-
-main {
-    display:grid;
-    grid-template-rows: max-content;
-    grid-template-columns: 1fr 4fr;
-    height: 100vh;
+ul li{
+    list-style-type: square;
 }
 
-header {
-    grid-column: 2;
-}
 
 h1,h2 {
     text-align: center;
-}
-
-aside{
-    grid-column: 1;
-    grid-row: 1/4;
-    background-color: #faf4ed;
-
-}
-
-ul li{
-    list-style-type: square;
 }
 
 .notes {
@@ -132,6 +109,33 @@ footer {
 .button:active{
     background-color:gray;
 }
+
+
+@media (min-width: 600px){
+
+
+main {
+    display:grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+header {
+    grid-column: 2;
+}
+
+aside{
+    grid-column: 1;
+    grid-row: 1/4;
+    background-color: #faf4ed;
+
+}
+
+
+
+
+
 
 
 }
