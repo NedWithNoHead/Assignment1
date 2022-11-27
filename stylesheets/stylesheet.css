@@ -8,9 +8,26 @@ body{
     height: 100vh;
 }
 
+header{
+    grid-column: 1/5;
+    padding-bottom: 0;
+}
+    
 aside{
     background-color: #faf4ed;
-    /* grid-column: 1; */
+    grid-column: 1/5;
+}
+
+main {
+    grid-column: 1/5;
+    display:grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 4fr;
+}
+
+.mainnote{
+    grid-column: 1/5;
+    
 }
 
 ul li{
@@ -101,12 +118,6 @@ footer {
 
 
 @media (min-width: 600px){
-    
-main {
-    display:grid;
-    grid-template-rows: max-content;
-    grid-template-columns: 1fr 4fr;
-}
 
 header {
     grid-column: 2;
@@ -117,4 +128,8 @@ aside{
     grid-row: 1/4;
 }
 
+main {
+    grid-column: 2/5;
+
+}
 }
