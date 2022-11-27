@@ -38,6 +38,13 @@ nav p{
     margin: 10px;
 }
 
+.button{
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;  
+}
 
 .upperbuttons{
     grid-row: 2;
@@ -68,41 +75,21 @@ footer {
 .newnote.button {
     color: white;
     background-color: #18464E;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
   }
   .theme.button {
     color: white;
     background-color:#2E2EAD;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
   }
 
 .save.button{
     color: white;
     background-color:#2d7490;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
 }
 
 
 .cancel.button{
     color: white;
     background-color:#711009;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
 }
 
 .button:hover{
