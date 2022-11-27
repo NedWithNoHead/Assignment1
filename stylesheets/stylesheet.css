@@ -1,17 +1,16 @@
 body{
     display: grid;
+    grid-template-columns: 1fr 4fr;
     background-color: #E8D8C5;
     font-family: 'Roboto Mono', monospace;
     color: #1D5763;
     margin:0;
+    height: 100vh;
 }
-
-
 
 aside{
     background-color: #faf4ed;
-    grid-column: 1/-1;
-    grid-row: 1;
+    /* grid-column: 1; */
 }
 
 ul li{
@@ -28,7 +27,7 @@ h1,h2 {
 }
 
 nav {
-    grid-row:1;
+    /* grid-row:1; */
     display: flex;
     justify-content: right;
     margin:0;
@@ -107,7 +106,6 @@ main {
     display:grid;
     grid-template-rows: max-content;
     grid-template-columns: 1fr 4fr;
-    height: 100vh;
 }
 
 header {
