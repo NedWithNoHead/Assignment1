@@ -118,7 +118,12 @@ footer {
 
 
 .darktheme {
-    background-color: darkblue;
+    background-color: black;
+    color: white;
+}
+
+.darkaside{
+    background-color: darkslategrey;
 }
 
 @media (min-width: 600px){
