@@ -21,12 +21,25 @@ const TriggerDarkTheme = function(){
     AsideArea.classList.toggle('darkaside');
 }
 
+function changeText()
+{
+    if (DarkThemeButton.textContent === "Dark Theme"){
+    DarkThemeButton.textContent = "Light Theme"
+}
+    else if (DarkThemeButton.textContent ==="Light Theme"){
+        DarkThemeButton.textContent = "Dark Theme"
+    }
+}
+
+
 DarkThemeButton.addEventListener('click', TriggerDarkTheme);
+DarkThemeButton.addEventListener('click', changeText);
 
 const HideTextArea = function (){
     SaveButton.classList.toggle('DeleteAll');
     CancelButton.classList.toggle('DeleteAll');
     CommentBox.classList.toggle('DeleteAll');
+
 }
 
 CancelButton.addEventListener('click', HideTextArea);
@@ -51,3 +64,6 @@ const NewNoteAlert = function(){
 }
 
 SaveButton.addEventListener('click', NewNoteAlert)
+
+const List_Item = document.querySelectorAll('ul li')
+console.log(List_Item)
