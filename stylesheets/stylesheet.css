@@ -126,6 +126,10 @@ footer {
     background-color: darkslategrey;
 }
 
+.DeleteAll{
+    display:none;
+}
+
 @media (min-width: 600px){
 
 header {
