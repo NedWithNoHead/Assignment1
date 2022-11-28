@@ -2,9 +2,15 @@
 const DarkThemeButton = document.querySelector('.theme.button');
 const AsideArea = document.querySelector('aside');
 const CancelButton = document.querySelector('.cancel.button');
-const HideSave = document.querySelector('.save.button');
-const HideText = document.querySelector('.myTextBox');
-const NewNote = document.querySelector('.newnote.button')
+const SaveButton = document.querySelector('.save.button');
+const CommentBox = document.querySelector('.myTextBox');
+const NewNote = document.querySelector('.newnote.button');
+const AdditionalNotes = document.querySelector('.AdditionalNotes')
+
+const notesArray = {
+    'title': 'note one',
+    'body': 'this is my first note'
+}
 
 
 const TriggerDarkTheme = function(){
@@ -15,17 +21,27 @@ const TriggerDarkTheme = function(){
 DarkThemeButton.addEventListener('click', TriggerDarkTheme);
 
 const HideTextArea = function (){
-    HideSave.classList.toggle('DeleteAll');
+    SaveButton.classList.toggle('DeleteAll');
     CancelButton.classList.toggle('DeleteAll');
-    HideText.classList.toggle('DeleteAll');
+    CommentBox.classList.toggle('DeleteAll');
 }
 
 CancelButton.addEventListener('click', HideTextArea);
 
 const MakeNewNote = function(){
-    HideSave.classList.toggle('DeleteAll');
-    CancelButton.classList.toggle('DeleteAll');
-    HideText.classList.toggle('DeleteAll');
+    SaveButton.classList.remove('DeleteAll');
+    CancelButton.classList.remove('DeleteAll');
+    CommentBox.classList.remove('DeleteAll');
 }
 
 NewNote.addEventListener('click', MakeNewNote)
+
+
+const NewNoteAlert = function(){
+    const NewNoteName = document.createElement('li');
+    NewNoteName.textContent = prompt('Input a name for your notes');
+    AdditionalNotes.appendChild(NewNoteName);
+    console.log(NewNoteName);
+}
+
+SaveButton.addEventListener('click', NewNoteAlert)
