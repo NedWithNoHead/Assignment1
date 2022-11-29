@@ -17,6 +17,7 @@ const notesArray = [
 const TriggerDarkTheme = function(){
     document.body.classList.toggle('darktheme');
     AsideArea.classList.toggle('darkaside');
+    CommentBox.classList.toggle('darkaside');
 }
 
 function changeText()
@@ -58,14 +59,12 @@ const NewNoteAlert = function(){
     NewNoteName.textContent = prompt('Input a name for your notes');
     AdditionalNotes.appendChild(NewNoteName);
     notesArray.push({title: NewNoteName.textContent, body:CommentBox.value});
-    console.log(notesArray);
 }
 }
 
 SaveButton.addEventListener('click', NewNoteAlert)
 
 const BubbleList = function(event){
-    console.log(event.target.textContent)
     for(let note of notesArray)
     { 
         if(event.target.textContent === note.title){

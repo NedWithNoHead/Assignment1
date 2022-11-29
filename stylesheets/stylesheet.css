@@ -127,7 +127,7 @@ footer {
 }
 
 .DeleteAll{
-    display:none;
+    visibility: hidden;
 }
 
 
