@@ -1,17 +1,33 @@
 body{
     display: grid;
+    grid-template-columns: 1fr 4fr;
     background-color: #E8D8C5;
     font-family: 'Roboto Mono', monospace;
     color: #1D5763;
     margin:0;
+    height: 100vh;
 }
 
-
-
+header{
+    grid-column: 1/5;
+    padding-bottom: 0;
+}
+    
 aside{
     background-color: #faf4ed;
-    grid-column: 1/-1;
-    grid-row: 1;
+    grid-column: 1/5;
+}
+
+main {
+    grid-column: 1/5;
+    display:grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 4fr;
+}
+
+.mainnote{
+    grid-column: 1/5;
+    
 }
 
 ul li{
@@ -28,7 +44,7 @@ h1,h2 {
 }
 
 nav {
-    grid-row:1;
+    /* grid-row:1; */
     display: flex;
     justify-content: right;
     margin:0;
@@ -38,6 +54,13 @@ nav p{
     margin: 10px;
 }
 
+.button{
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;  
+}
 
 .upperbuttons{
     grid-row: 2;
@@ -68,41 +91,21 @@ footer {
 .newnote.button {
     color: white;
     background-color: #18464E;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
   }
   .theme.button {
     color: white;
     background-color:#2E2EAD;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
   }
 
 .save.button{
     color: white;
     background-color:#2d7490;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
 }
 
 
 .cancel.button{
     color: white;
     background-color:#711009;
-    font-size: 15px;
-    text-align: center;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;  
 }
 
 .button:hover{
@@ -114,20 +117,22 @@ footer {
 }
 
 
-@media (min-width: 600px){
-
-
-/* header {
-    grid-column: 1/3;
-    grid-row: 1;
-} */
-    
-main {
-    display:grid;
-    grid-template-rows: max-content;
-    grid-template-columns: 1fr 4fr;
-    height: 100vh;
+.darktheme {
+    background-color: black;
+    color: white;
 }
+
+.darkaside{
+    background-color: darkslategrey;
+}
+
+.DeleteAll{
+    visibility: hidden;
+}
+
+
+
+@media (min-width: 600px){
 
 header {
     grid-column: 2;
@@ -136,8 +141,10 @@ header {
 aside{
     grid-column: 1;
     grid-row: 1/4;
-    background-color: #faf4ed;
-
 }
 
+main {
+    grid-column: 2/5;
+
+}
 }

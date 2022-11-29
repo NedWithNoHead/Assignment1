@@ -8,55 +8,54 @@
       rel="stylesheet"
     />
     <link href="stylesheets/stylesheet.css" rel="stylesheet" />
+    <script defer src="scripts/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Take Better Notes</h1>
-      </header>
-      <aside>
-        <h2>My Notes</h2>
-        <ul>
-          <li>Note one</li>
-          <li>Note two</li>
-        </ul>
-      </aside>
+    <header>
+      <h1>Take Better Notes</h1>
+      <nav>
+        <p>About</p>
+        <p>Docs</p>
+      </nav>
+    </header>
+    <aside class = 'AsideArea'>
+      <h2>My Notes</h2>
+      <ul class = 'AdditionalNotes'>
+        <li>Note one</li>
+        <li>Note two</li>
+      </ul>
+    </aside>
+    <main class = 'Section1'>
       <div class="mainnote">
-        <nav>
-          <p>About</p>
-          <p>Docs</p>
-        </nav>
         <div class="notes">
           <div class="upperbuttons">
             <button class="newnote button " type="button">New Note</button>
             <button class="theme button" type="button">Dark Theme</button>
           </div>
-          <textarea name="textarea" rows="5" cols="30" readonly>
-I am a read-only textarea.
-          </textarea>
+          <textarea class = 'myTextBox' name="textarea" rows="5" cols="30" placeholder="Start typing"></textarea>
           <div class="lowerbuttons">
             <button class="save button" type="button">Save</button>
             <button class="cancel button" type="button">Cancel</button>
           </div>
         </div>
       </div>
-      <footer>
-        <h3>Keep in Touch</h3>
-        <a href="https://www.linkedin.com/learning/" title="linkedin">
-        <img
-        src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png"
-        alt="Linked logo"
-        width="50"
-        height="50"></a>
-        <a href="https://www.bcit.ca/" title="BCIT Website">
-        <img
-        src="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png"
-        alt="Logo of the internet"
-        width="50"
-        height="50"></a>
-    </footer>
     </main>
+    <footer>
+      <h3>Keep in Touch</h3>
+      <a href="https://www.linkedin.com/learning/" title="linkedin">
+      <img
+      src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png"
+      alt="Linked logo"
+      width="50"
+      height="50"></a>
+      <a href="https://www.bcit.ca/" title="BCIT Website">
+      <img
+      src="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png"
+      alt="Logo of the internet"
+      width="50"
+      height="50"></a>
+  </footer>
   </body>
 </html>
