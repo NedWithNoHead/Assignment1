@@ -8,9 +8,9 @@ const NewNote = document.querySelector('.newnote.button');
 const AdditionalNotes = document.querySelector('.AdditionalNotes')
 
 const notesArray = [
-    {title: 'note one',
+    {title: 'Note one',
     body: 'this is my first note'},
-    {title: 'note two',
+    {title: 'Note two',
     body: 'this is my second note'}
 ]
 
@@ -65,5 +65,14 @@ const NewNoteAlert = function(){
 
 SaveButton.addEventListener('click', NewNoteAlert)
 
-const List_Item = document.querySelectorAll('ul li')
-console.log(List_Item)
+const BubbleList = function(event){
+    console.log(event.target.textContent)
+    for(let note of notesArray)
+    { 
+        if(event.target.textContent === note.title){
+            CommentBox.value = note.body
+        }
+    }
+}
+
+AdditionalNotes.addEventListener('click', BubbleList)
