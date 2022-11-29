@@ -14,8 +14,6 @@ const notesArray = [
     body: 'this is my second note'}
 ]
 
-console.log(notesArray)
-
 const TriggerDarkTheme = function(){
     document.body.classList.toggle('darktheme');
     AsideArea.classList.toggle('darkaside');
@@ -48,7 +46,7 @@ const MakeNewNote = function(){
     SaveButton.classList.remove('DeleteAll');
     CancelButton.classList.remove('DeleteAll');
     CommentBox.classList.remove('DeleteAll');
-    CommentBox.value = " "
+    CommentBox.value = ""
 }
 
 NewNote.addEventListener('click', MakeNewNote)
