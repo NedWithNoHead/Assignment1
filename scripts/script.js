@@ -48,6 +48,7 @@ const MakeNewNote = function(){
     SaveButton.classList.remove('DeleteAll');
     CancelButton.classList.remove('DeleteAll');
     CommentBox.classList.remove('DeleteAll');
+    CommentBox.value = " "
 }
 
 NewNote.addEventListener('click', MakeNewNote)
